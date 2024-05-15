@@ -3,3 +3,9 @@ def pub println\text =
     console.log(text);
     return $.nil;
   "
+
+def pub debug\value =
+  external "
+    console.log($.stringify(value));
+    return value;
+  "
